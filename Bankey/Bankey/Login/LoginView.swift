@@ -12,6 +12,7 @@ class LoginView: UIView {
     
     let stackView = UIStackView()
     let userNameTextField = UITextField()
+    let passwordTextField = UITextField()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,10 +23,6 @@ class LoginView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override var intrinsicContentSize: CGSize {
-        return CGSize(width: 200, height: 200)
     }
 }
 
@@ -42,10 +39,16 @@ extension LoginView {
         userNameTextField.translatesAutoresizingMaskIntoConstraints = false
         userNameTextField.placeholder = "Username"
         userNameTextField.delegate = self
+        
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.placeholder = "Password"
+        passwordTextField.isSecureTextEntry = true
+        passwordTextField.delegate = self
     }
     
     func layout() {
         stackView.addArrangedSubview(userNameTextField)
+        stackView.addArrangedSubview(passwordTextField)
         
         addSubview(stackView )
  
@@ -61,6 +64,8 @@ extension LoginView {
 extension LoginView: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        userNameTextField.endEditing(true)
+        passwordTextField.endEditing(true )
         if textField.text != "" {
             return true
         } else {
