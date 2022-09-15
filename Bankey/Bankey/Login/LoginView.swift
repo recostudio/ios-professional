@@ -1,9 +1,3 @@
-//
-//  LoginView.swift
-//  Bankey
-//
-//  Created by Maciej Szostak on 29/08/2022.
-//
 
 import Foundation
 import UIKit
@@ -76,11 +70,7 @@ extension LoginView: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         userNameTextField.endEditing(true)
         passwordTextField.endEditing(true )
-        if textField.text != "" {
             return true
-        } else {
-            return false
-        }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
