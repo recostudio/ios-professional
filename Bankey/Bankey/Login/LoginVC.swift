@@ -1,6 +1,6 @@
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginVC: UIViewController {
 
     let titleLabel = UILabel()
     let subtitleLabel = UILabel()
@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     }
 }
 
-extension LoginViewController {
+extension LoginVC {
     private func style() {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.textAlignment = .center
@@ -83,7 +83,7 @@ extension LoginViewController {
     }
 }
 // MARK: Actions
-extension LoginViewController {
+extension LoginVC {
     @objc func signInTapped(sender: UIButton) {
         errorMessageLabel.isHidden = true
         login()

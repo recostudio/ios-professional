@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE8D753B2912BA1100E8B52B /* OnboardingContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D753A2912BA1100E8B52B /* OnboardingContainerVC.swift */; };
 		BE96DE1328BD18D00048217F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96DE1228BD18D00048217F /* AppDelegate.swift */; };
-		BE96DE1728BD18D00048217F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96DE1628BD18D00048217F /* LoginViewController.swift */; };
+		BE96DE1728BD18D00048217F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96DE1628BD18D00048217F /* LoginVC.swift */; };
 		BE96DE1C28BD18D20048217F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE96DE1B28BD18D20048217F /* Assets.xcassets */; };
 		BE96DE1F28BD18D20048217F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE96DE1D28BD18D20048217F /* LaunchScreen.storyboard */; };
 		BE96DE2928BD23500048217F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96DE2828BD23500048217F /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE8D753A2912BA1100E8B52B /* OnboardingContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerVC.swift; sourceTree = "<group>"; };
 		BE96DE0F28BD18D00048217F /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE96DE1228BD18D00048217F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE96DE1628BD18D00048217F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BE96DE1628BD18D00048217F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BE96DE1B28BD18D20048217F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE96DE1E28BD18D20048217F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE96DE2028BD18D20048217F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE8D75392912B9D400E8B52B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D753A2912BA1100E8B52B /* OnboardingContainerVC.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		BE96DE0628BD18D00048217F = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +64,10 @@
 		BE96DE1128BD18D00048217F /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
-				BE96DE2628BD22A00048217F /* Files */,
+				BE8D75392912B9D400E8B52B /* Onboarding */,
 				BE96DE2728BD22FD0048217F /* Login */,
 				BE96DE1228BD18D00048217F /* AppDelegate.swift */,
+				BE96DE2628BD22A00048217F /* Files */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -74,7 +85,7 @@
 		BE96DE2728BD22FD0048217F /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				BE96DE1628BD18D00048217F /* LoginViewController.swift */,
+				BE96DE1628BD18D00048217F /* LoginVC.swift */,
 				BE96DE2828BD23500048217F /* LoginView.swift */,
 			);
 			path = Login;
@@ -151,7 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE96DE2928BD23500048217F /* LoginView.swift in Sources */,
-				BE96DE1728BD18D00048217F /* LoginViewController.swift in Sources */,
+				BE8D753B2912BA1100E8B52B /* OnboardingContainerVC.swift in Sources */,
+				BE96DE1728BD18D00048217F /* LoginVC.swift in Sources */,
 				BE96DE1328BD18D00048217F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
