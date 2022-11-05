@@ -1,12 +1,20 @@
 import UIKit
 
+protocol LoginVCDelegate: AnyObject {
+    func didLogin()
+}
+
 class LoginVC: UIViewController {
 
     let titleLabel = UILabel()
     let subtitleLabel = UILabel()
+    
     let loginView = LoginView()
     let signInButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
+    
+    weak var delegate: LoginVCDelegate?
+    
     var username: String? {
         return loginView.userNameTextField.text
     }
@@ -96,8 +104,9 @@ extension LoginVC {
         if username.isEmpty || password.isEmpty {
             configureView(withMessage: "Username/Password should never be blank" )
         }
-        if username == "Maciek" && password == "Maciek" {
+        if username == "" && password == "" {
             signInButton.configuration?.showsActivityIndicator = true
+            delegate?.didLogin()
         } else {
             configureView(withMessage: "Incorect username / password")
         }

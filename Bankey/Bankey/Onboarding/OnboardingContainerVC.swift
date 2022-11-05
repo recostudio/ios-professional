@@ -1,9 +1,14 @@
 import UIKit
 
+protocol OnboardingContainerVCDelegate: AnyObject {
+    func didFinishOnboarding()
+}
+
 class OnboardingContainerVC: UIViewController {
 
     let pageViewController: UIPageViewController
     var pages = [UIViewController]()
+    weak var delegate: OnboardingContainerVCDelegate?
     var currentVC: UIViewController
     var closeButton = UIButton(type: .system)
     
@@ -110,6 +115,9 @@ extension OnboardingContainerVC: UIPageViewControllerDataSource {
 // MARK: Actions
 extension OnboardingContainerVC {
     @objc func closeTapped(_ sender: UIButton) {
-//        TODO 
+        delegate?.didFinishOnboarding()
+    }
+    @objc func doneTapped(_sender: UIButton) {
+        delegate?.didFinishOnboarding()
     }
 }
