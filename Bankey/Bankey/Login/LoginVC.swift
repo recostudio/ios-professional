@@ -2,6 +2,7 @@ import UIKit
 
 protocol LoginVCDelegate: AnyObject {
     func didLogin()
+//    if we want to pass data we should write it like func didLogin(_ sender: LoginVC)
 }
 
 class LoginVC: UIViewController {
@@ -101,9 +102,11 @@ extension LoginVC {
             assertionFailure("Username/Password should never be nil")
             return
         }
-        if username.isEmpty || password.isEmpty {
-            configureView(withMessage: "Username/Password should never be blank" )
-        }
+//        if username.isEmpty || password.isEmpty {
+//            configureView(withMessage: "Username/Password should never be blank" )
+//            return
+//        }
+
         if username == "" && password == "" {
             signInButton.configuration?.showsActivityIndicator = true
             delegate?.didLogin()

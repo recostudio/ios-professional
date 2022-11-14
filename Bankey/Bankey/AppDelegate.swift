@@ -10,14 +10,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         
         loginVC.delegate = self
         onboardingContainerVC.delegate = self
+        
+        window?.rootViewController = loginVC
+        
 //        window?.rootViewController = LoginVC()
-        window?.rootViewController = onboardingContainerVC
+//        window?.rootViewController = onboardingContainerVC // to hardcode test onboarding
 //        window?.rootViewController = OnboardingContainerVC()
 //        window?.rootViewController = OnboardingVC(heroImageName: "delorean", titleText: "Bankey is faster, easier to use, and has a brand new look and feel that will make you feel like you are back in 1989.")
         return true
@@ -26,7 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: LoginVCDelegate {
     func didLogin() {
-        print("foo - DId Login")
+        print("foo - Did Login")
+        window?.rootViewController = onboardingContainerVC
     }
 }
 
