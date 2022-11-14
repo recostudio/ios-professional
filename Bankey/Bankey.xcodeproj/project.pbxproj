@@ -14,6 +14,7 @@
 		BE96DE1C28BD18D20048217F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE96DE1B28BD18D20048217F /* Assets.xcassets */; };
 		BE96DE1F28BD18D20048217F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE96DE1D28BD18D20048217F /* LaunchScreen.storyboard */; };
 		BE96DE2928BD23500048217F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96DE2828BD23500048217F /* LoginView.swift */; };
+		BE999B852922C5EF00FB69D2 /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE999B842922C5EF00FB69D2 /* DummyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BE96DE1E28BD18D20048217F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE96DE2028BD18D20048217F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE96DE2828BD23500048217F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BE999B842922C5EF00FB69D2 /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				BE96DE1628BD18D00048217F /* LoginVC.swift */,
 				BE96DE2828BD23500048217F /* LoginView.swift */,
+				BE999B842922C5EF00FB69D2 /* DummyVC.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE96DE2928BD23500048217F /* LoginView.swift in Sources */,
+				BE999B852922C5EF00FB69D2 /* DummyVC.swift in Sources */,
 				BE8D753B2912BA1100E8B52B /* OnboardingContainerVC.swift in Sources */,
 				BE8D753D2912F7A900E8B52B /* OnboardingVC.swift in Sources */,
 				BE96DE1728BD18D00048217F /* LoginVC.swift in Sources */,

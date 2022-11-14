@@ -1,5 +1,9 @@
 import UIKit
 
+protocol LogoutDelegate: AnyObject {
+    func didLogout()
+}
+
 protocol LoginVCDelegate: AnyObject {
     func didLogin()
 //    if we want to pass data we should write it like func didLogin(_ sender: LoginVC)
@@ -26,6 +30,11 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         style()
         layout()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        signInButton.configuration?.showsActivityIndicator = false
     }
 }
 

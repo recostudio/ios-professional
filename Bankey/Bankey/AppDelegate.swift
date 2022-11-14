@@ -7,7 +7,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let loginVC = LoginVC()
     let onboardingContainerVC = OnboardingContainerVC()
-    
+    let dummyVC = DummyVC()
+
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         loginVC.delegate = self
         onboardingContainerVC.delegate = self
+        dummyVC.logoutDelegate = self
         
         window?.rootViewController = loginVC
         
@@ -25,20 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = OnboardingContainerVC()
 //        window?.rootViewController = OnboardingVC(heroImageName: "delorean", titleText: "Bankey is faster, easier to use, and has a brand new look and feel that will make you feel like you are back in 1989.")
         return true
-    }
-}
-
-extension AppDelegate: LoginVCDelegate {
-    func didLogin() {
-        print("foo - Did Login")
-//        window?.rootViewController = onboardingContainerVC
-        setRootViewController(onboardingContainerVC)
-    }
-}
-
-extension AppDelegate: OnboardingContainerVCDelegate {
-    func didFinishOnboarding() {
-        print("foo - Did onboard")
     }
 }
 
@@ -58,3 +46,25 @@ extension AppDelegate {
                           animations: nil, completion: nil)
     }
 }
+// MARK: Actions
+extension AppDelegate: LoginVCDelegate {
+    func didLogin() {
+        print("foo - Did Login")
+//        window?.rootViewController = onboardingContainerVC
+        setRootViewController(onboardingContainerVC)
+    }
+}
+
+extension AppDelegate: OnboardingContainerVCDelegate {
+    func didFinishOnboarding() {
+        print("foo - Did onboard")
+        setRootViewController(dummyVC)
+    }
+}
+
+extension AppDelegate: LogoutDelegate {
+    func didLogout() {
+        setRootViewController(loginVC)
+    }
+}
+
