@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE4392292927C587000542E4 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4392282927C587000542E4 /* LocalState.swift */; };
 		BE8D753B2912BA1100E8B52B /* OnboardingContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D753A2912BA1100E8B52B /* OnboardingContainerVC.swift */; };
 		BE8D753D2912F7A900E8B52B /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D753C2912F7A900E8B52B /* OnboardingVC.swift */; };
 		BE96DE1328BD18D00048217F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96DE1228BD18D00048217F /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE4392282927C587000542E4 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		BE8D753A2912BA1100E8B52B /* OnboardingContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerVC.swift; sourceTree = "<group>"; };
 		BE8D753C2912F7A900E8B52B /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		BE96DE0F28BD18D00048217F /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE4392272927C566000542E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BE4392282927C587000542E4 /* LocalState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		BE8D75392912B9D400E8B52B /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +79,7 @@
 		BE96DE1128BD18D00048217F /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				BE4392272927C566000542E4 /* Utils */,
 				BE8D75392912B9D400E8B52B /* Onboarding */,
 				BE96DE2728BD22FD0048217F /* Login */,
 				BE96DE1228BD18D00048217F /* AppDelegate.swift */,
@@ -168,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE96DE2928BD23500048217F /* LoginView.swift in Sources */,
+				BE4392292927C587000542E4 /* LocalState.swift in Sources */,
 				BE999B852922C5EF00FB69D2 /* DummyVC.swift in Sources */,
 				BE8D753B2912BA1100E8B52B /* OnboardingContainerVC.swift in Sources */,
 				BE8D753D2912F7A900E8B52B /* OnboardingVC.swift in Sources */,

@@ -4,7 +4,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var hasOnboarded = false
     
     let loginVC = LoginVC()
     let onboardingContainerVC = OnboardingContainerVC()
@@ -52,7 +51,7 @@ extension AppDelegate: LoginVCDelegate {
     func didLogin() {
         print("foo - Did Login")
 //        window?.rootViewController = onboardingContainerVC
-        if hasOnboarded {
+        if LocalState.hasOnboarded {
             setRootViewController(dummyVC)
         } else {
             setRootViewController(onboardingContainerVC)
@@ -65,7 +64,7 @@ extension AppDelegate: LoginVCDelegate {
 extension AppDelegate: OnboardingContainerVCDelegate {
     func didFinishOnboarding() {
         print("foo - Did onboard")
-        hasOnboarded = true
+        LocalState.hasOnboarded = true
         setRootViewController(dummyVC)
     }
 }
