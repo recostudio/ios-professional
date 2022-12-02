@@ -41,12 +41,12 @@ class MainVC: UITabBarController {
         tabBar.isTranslucent = false
     }
 }
-
-class AccountSummaryVC: UIViewController {
-    override func viewDidLoad() {
-        view.backgroundColor = .systemGreen
-    }
-}
+//Dummy VC before ive created full new AccountSummaryVC
+//class AccountSummaryVC: UIViewController {
+//    override func viewDidLoad() {
+//        view.backgroundColor = .systemGreen
+//    }
+//}
 
 class MoveMoneyVC: UIViewController {
     override func viewDidLoad() {

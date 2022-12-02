@@ -23,8 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         onboardingContainerVC.delegate = self
         dummyVC.logoutDelegate = self
         
-        window?.rootViewController = loginVC
-        
+//        window?.rootViewController = loginVC
+      
+      window?.rootViewController = AccountSummaryVC()
 //        window?.rootViewController = LoginVC()
 //        window?.rootViewController = onboardingContainerVC // to hardcode test onboarding
 //        window?.rootViewController = OnboardingContainerVC()

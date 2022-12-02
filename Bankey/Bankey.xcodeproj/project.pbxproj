@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2ABE095D292BCF4B003B2ED2 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE095C292BCF4B003B2ED2 /* UIViewController+Utils.swift */; };
 		2ABE095F292BEA35003B2ED2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE095E292BEA35003B2ED2 /* MainVC.swift */; };
+		9ED332E2293A9A1400BFCBE5 /* AccountSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED332E1293A9A1400BFCBE5 /* AccountSummaryVC.swift */; };
 		BE4392292927C587000542E4 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4392282927C587000542E4 /* LocalState.swift */; };
 		BE8D753B2912BA1100E8B52B /* OnboardingContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D753A2912BA1100E8B52B /* OnboardingContainerVC.swift */; };
 		BE8D753D2912F7A900E8B52B /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D753C2912F7A900E8B52B /* OnboardingVC.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		2ABE095C292BCF4B003B2ED2 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		2ABE095E292BEA35003B2ED2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		9ED332E1293A9A1400BFCBE5 /* AccountSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryVC.swift; sourceTree = "<group>"; };
 		BE4392282927C587000542E4 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		BE8D753A2912BA1100E8B52B /* OnboardingContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerVC.swift; sourceTree = "<group>"; };
 		BE8D753C2912F7A900E8B52B /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9ED332E0293A99B100BFCBE5 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				9ED332E1293A9A1400BFCBE5 /* AccountSummaryVC.swift */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
 		BE4392272927C566000542E4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,11 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				BE96DE1228BD18D00048217F /* AppDelegate.swift */,
+				2ABE095E292BEA35003B2ED2 /* MainVC.swift */,
 				BE96DE2728BD22FD0048217F /* Login */,
 				BE8D75392912B9D400E8B52B /* Onboarding */,
+				9ED332E0293A99B100BFCBE5 /* AccountSummary */,
 				BE4392272927C566000542E4 /* Utils */,
 				BE96DE2628BD22A00048217F /* Files */,
-				2ABE095E292BEA35003B2ED2 /* MainVC.swift */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -193,6 +204,7 @@
 				BE8D753D2912F7A900E8B52B /* OnboardingVC.swift in Sources */,
 				BE96DE1728BD18D00048217F /* LoginVC.swift in Sources */,
 				BE96DE1328BD18D00048217F /* AppDelegate.swift in Sources */,
+				9ED332E2293A9A1400BFCBE5 /* AccountSummaryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
